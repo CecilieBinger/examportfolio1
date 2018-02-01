@@ -1,0 +1,564 @@
+.wrapper {
+  background: #ffffff;
+  width: 1048px;
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  letter-spacing: 12px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+h1 {
+  color: black;
+  text-decoration: none;
+  justify-content: center;
+}
+
+#linkedin {
+  margin-left: 5px;
+}
+
+#nav_menu {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+#nav_menu ul {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav_menu li {
+  flex: 1;
+}
+
+#nav_menu a {
+  color: black;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 44px;
+}
+
+#nav_menu ul li a.current {
+  color: black;
+  background-color: white;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+  background-color: rgba(171,14,14,0.9);
+}
+
+.content {
+  display: flex;
+}
+
+#slideshow {
+  flex: 1;
+}
+
+#first_photo {
+  margin-left: -37px;
+  margin-top: 15px;
+  width: 524.5px;
+}
+
+#last_photo {
+  margin-top: 15px;
+  margin-right: 30px;
+  width: 520px;
+}
+
+.photo {
+  margin-top: 15px;
+  width: 520px;
+}
+
+#slideshow ul {
+  list-style: none;
+  position: relative;
+  width: 500%;
+}
+
+#slideshow ul li {
+  float: left;
+}
+
+#slideshow ul {
+  animation: slideshow 30s infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  20% {
+    left: -24.9%;
+  }
+  30% {
+    left: -24.9%;
+  }
+  40% {
+    left: -49.9%;
+  }
+  50% {
+    left: -49.9%;
+  }
+  60% {
+    left: -75%;
+  }
+  70% {
+    left: -75%;
+  }
+  80% {
+    left: -99.6%;
+  }
+  90% {
+    left: -99.6%;
+  }
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin: auto;
+  text-align:center;
+}
+
+/* portfolio */
+
+.gallery {
+  width: 501px;
+}
+
+.main {
+  max-width: 1048px;
+  margin: auto;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+.content_gallery {
+  background-color: white;
+  padding: 20px;
+  width: 500px;
+}
+
+/* little triangle printdesign */
+
+#overlay {
+  border-bottom: 100px solid #AB0E0E;
+  border-left: 100px solid transparent;
+  bottom: 65px;
+  height: 0;
+  opacity: .95;
+  position: absolute;
+  text-indent: 0;
+  transition: all .5s ease-out;
+  width: 0;
+  left: 514px;
+}
+
+/* big triangle printdesign */
+
+:hover #overlay {
+  border-bottom: 356px solid #AB0E0E;
+  border-left: 500px solid transparent;
+  transition: all .5s ease-out;
+  left: 114px;
+}
+
+/* for a text in little triangle printdesign */
+
+#corner-overlay-content {
+  bottom: 15px;
+  position: absolute;
+  right: 15px;
+  transition: all .5s ease-out;
+}
+
+:hover #corner-overlay-content {
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+
+/* text in big triangle printdesign */
+
+#overlay-content {
+  bottom: 0;
+  color: #333;
+  left: 0;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  left: -180px;
+  top: 135px;
+  transition: all .3s ease-out;
+  text-align: right;
+}
+
+h2 {
+  border-bottom: 1px solid #333;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 5px;
+  padding: 0 0 12px;
+  text-align: right;
+  -webkit-margin-start: -23px;
+}
+
+:hover #overlay-content {
+  opacity: 1;
+  transition: all .3s ease-out;
+  transition-delay: .3s;
+}
+
+/* end triangle printdesign */
+
+/* little triangle fotografi */
+
+#overlay_f {
+  border-bottom: 100px solid #AB0E0E;
+  border-left: 100px solid transparent;
+  bottom: 64px;
+  height: 0;
+  opacity: .95;
+  position: absolute;
+  text-indent: 0;
+  transition: all .5s ease-out;
+  width: 0;
+  left: 1054px;
+}
+
+/* big triangle fotografi */
+
+:hover #overlay_f {
+  border-bottom: 356px solid #AB0E0E;
+  border-left: 500px solid transparent;
+  transition: all .5s ease-out;
+  left: 654px;
+}
+
+/* for a text in little triangle fotografi */
+
+#corner-overlay-content_f {
+  bottom: 15px;
+  position: absolute;
+  right: 15px;
+  transition: all .5s ease-out;
+}
+
+:hover #corner-overlay-content_f {
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+
+/* text in big triangle fotografi */
+
+#overlay-content_f {
+  bottom: 0;
+  color: #333;
+  left: 0;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  left: -180px;
+  top: 135px;
+  transition: all .3s ease-out;
+  text-align: right;
+}
+
+:hover #overlay-content_f {
+  opacity: 1;
+  transition: all .3s ease-out;
+  transition-delay: .3s;
+}
+
+/* end triangle fotografi */
+
+/* little triangle videoproduktion */
+
+#overlay_v {
+  border-bottom: 100px solid #AB0E0E;
+  border-left: 100px solid transparent;
+  bottom: -336px;
+  height: 0;
+  opacity: .95;
+  position: absolute;
+  text-indent: 0;
+  transition: all .5s ease-out;
+  width: 0;
+  left: 515px;
+}
+
+/* big triangle videoproduktion */
+
+:hover #overlay_v {
+  border-bottom: 356px solid #AB0E0E;
+  border-left: 500px solid transparent;
+  transition: all .5s ease-out;
+  left: 115px;
+}
+
+/* for a text in little triangle videoproduktion */
+
+#corner-overlay-content_v {
+  bottom: 15px;
+  position: absolute;
+  right: 15px;
+  transition: all .5s ease-out;
+}
+
+:hover #corner-overlay-content_v {
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+
+/* text in big triangle videoproduktion */
+
+#overlay-content_v {
+  bottom: 0;
+  color: #333;
+  left: 0;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  left: -180px;
+  top: 135px;
+  transition: all .3s ease-out;
+  text-align: right;
+}
+
+:hover #overlay-content_v {
+  opacity: 1;
+  transition: all .3s ease-out;
+  transition-delay: .3s;
+}
+
+/* end triangle videoproduktion */
+
+/* little triangle webdesign */
+
+#overlay_w {
+  border-bottom: 100px solid #AB0E0E;
+  border-left: 100px solid transparent;
+  bottom: -336px;
+  height: 0;
+  opacity: .95;
+  position: absolute;
+  text-indent: 0;
+  transition: all .5s ease-out;
+  width: 0;
+  left: 1054px;
+}
+
+/* big triangle webdesign */
+
+:hover #overlay_w {
+  border-bottom: 356px solid #AB0E0E;
+  border-left: 500px solid transparent;
+  transition: all .5s ease-out;
+  left: 654px;
+}
+
+/* for a text in little triangle webdesign */
+
+#corner-overlay-content_w {
+  bottom: 15px;
+  position: absolute;
+  right: 15px;
+  transition: all .5s ease-out;
+}
+
+:hover #corner-overlay-content_w {
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+
+/* text in big triangle webdesign */
+
+#overlay-content_w {
+  bottom: 0;
+  color: #333;
+  left: 0;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  left: -180px;
+  top: 135px;
+  transition: all .3s ease-out;
+  text-align: right;
+}
+
+:hover #overlay-content_w {
+  opacity: 1;
+  transition: all .3s ease-out;
+  transition-delay: .3s;
+}
+
+/* end triangle webdesign */
+
+/* little triangle kommunikation */
+
+#overlay_k {
+  border-bottom: 100px solid #AB0E0E;
+  border-left: 100px solid transparent;
+  bottom: -736px;
+  height: 0;
+  opacity: .95;
+  position: absolute;
+  text-indent: 0;
+  transition: all .5s ease-out;
+  width: 0;
+  left: 515px;
+}
+
+/* big triangle kommunikation */
+
+:hover #overlay_k {
+  border-bottom: 356px solid #AB0E0E;
+  border-left: 500px solid transparent;
+  transition: all .5s ease-out;
+  left: 115px;
+}
+
+/* for a text in little triangle kommunikation */
+
+#corner-overlay-content_k {
+  bottom: 15px;
+  position: absolute;
+  right: 15px;
+  transition: all .5s ease-out;
+}
+
+:hover #corner-overlay-content_k {
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+
+/* text in big triangle kommunikation */
+
+#overlay-content_k {
+  bottom: 0;
+  color: #333;
+  left: 0;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  left: -180px;
+  top: 135px;
+  transition: all .3s ease-out;
+  text-align: right;
+}
+
+:hover #overlay-content_k {
+  opacity: 1;
+  transition: all .3s ease-out;
+  transition-delay: .3s;
+}
+
+/* end triangle kommunikation */
+
+@media (max-width: 1048px){
+  .column {
+    width: 50%;
+  }
+}
+
+#content_communication {
+  background-color: white;
+  padding: 20px;
+}
+
+#content_videoproduction {
+  background-color: white;
+  padding: 20px 5px;
+  margin-left: 17px;
+}
+
+.portfolio_hover {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio_hover li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  list-style-type: none;
+  line-height: 200%;
+  text-align: right;
+}
+
+.portfolio_hover a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-right: 3px;
+}
+
+.cases {
+  margin-left: 249px;
+  padding: 25px 0;
+  width: 550px;
+}
+
+/* paragraph style */
+
+p {
+  font-family: 'Avenir Next Condens', sans-serif;
+  font-weight: 100;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+h4 {
+  border-bottom: 1px solid black;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  width: 200px;
+}
